@@ -17,7 +17,7 @@ function LoanRepayment() {
   };
 
   const calculateLoan = () => {
-    fetch("http://localhost:5000/calculate-loan", {
+    fetch("https://loan-emi-calculator-1.onrender.com/calculate-loan", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(loanDetails),
